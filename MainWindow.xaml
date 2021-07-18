@@ -1,0 +1,25 @@
+﻿<Window x:Class="Projekt2v2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Projekt2v2"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="487" Width="840">
+    <Grid>
+        <Label x:Name="Label" Content="Zaloguj się !" HorizontalAlignment="Left" Height="30" Margin="10,10,0,0" VerticalAlignment="Top" Width="100"/>
+        <TextBox x:Name="LoginTextBox" HorizontalAlignment="Left" Margin="10,45,0,0" Text="Login" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="Login_TextChanged"/>
+        <Label x:Name="Rejestracja" Content="Nie masz konta? Utwórz je teraz" HorizontalAlignment="Left" Margin="605,10,0,0" VerticalAlignment="Top" Height="30" Width="200"/>
+        <TextBox x:Name="LoginRej" HorizontalAlignment="Left" Height="20" Margin="605,45,0,0" Text="Login" TextWrapping="Wrap" VerticalAlignment="Top" Width="100" TextChanged="LoginRej_TextChanged"/>
+        <CheckBox x:Name="RejCheck" Content="Przeczytałem Regulamin" HorizontalAlignment="Left" Height="18" Margin="605,95,0,0" VerticalAlignment="Top" Width="163" Checked="RejCheck_Checked"/>
+        <Button x:Name="LoginButton" Content="Zaloguj" HorizontalAlignment="Left" Margin="10,94,0,0" VerticalAlignment="Top" Height="38" Width="120" Click="LoginButton_Click"/>
+        <Button x:Name="RejButton" Content="Utwórz konto" HorizontalAlignment="Left" Height="25" Margin="605,118,0,0" VerticalAlignment="Top" Width="200" Click="RejButton_Click"/>
+        <TextBox x:Name="ImieRej" HorizontalAlignment="Left" Height="20" Margin="710,45,0,0" Text="Imie" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="ImieRej_TextChanged"/>
+        <TextBox x:Name="NazwiskoRej" HorizontalAlignment="Left" Height="20" Margin="710,70,0,0" Text="Nazwisko" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="NazwiskoRej_TextChanged"/>
+        <DataGrid x:Name="dataGrid" Margin="10,167,10,10" SelectionChanged="dataGrid_SelectionChanged"/>
+        <Button x:Name="Wypozyczone" Content="Historia" HorizontalAlignment="Left" Margin="10,137,0,0" VerticalAlignment="Top" Width="120" Click="Wypozyczone_Click"/>
+        <Button x:Name="Oferta" Content="Oferta" HorizontalAlignment="Left" Margin="135,137,0,0" VerticalAlignment="Top" Width="109" Click="Oferta_Click"/>
+        <PasswordBox x:Name="passwordBox" HorizontalAlignment="Left" Margin="10,68,0,0" VerticalAlignment="Top" Width="120" Password="Haslo"/>
+        <PasswordBox x:Name="passwordBox1" HorizontalAlignment="Left" Margin="605,70,0,0" VerticalAlignment="Top" Width="100" Password="Haslo"/>
+    </Grid>
+</Window>
